@@ -8,13 +8,13 @@ Core Swift for senior iOS interviews: language fundamentals, advanced Swift, mem
 
 | # | Folder | Topics | Hours | Day |
 |---|--------|--------|-------|-----|
-| 01 | `01_Swift_Fundamentals` | Basics, Value vs Reference Types, Enums, Optionals, Properties, Closures, Higher-Order Functions, Initialization | 6 (with 02) | Sun 27 |
+| 01 | `01_Swift_Fundamentals` | Basics, Value vs Reference Types, Enums, Optionals, Properties, Closures, Higher-Order Functions, Initialization, Access Control | 6 (with 02) | Sun 27 |
 | 02 | `02_Advanced_Swift` | Protocols & POP, Any vs Some, Generics, Property Wrappers, Error Handling, Method Dispatch | — | Wed 30 |
 | 03 | `03_Memory_ARC` | ARC Basics, Strong / Weak / Unowned, Retain Cycles, Closure Retain Cycles, Capture Lists, Weak Self, Deinit | 6 | Sat 26 |
 | 04 | `04_Swift_Concurrency` | Basics, GCD, Serial vs Concurrent, Sync vs Async, Deadlock, Race Condition, Thread Safety, async/await, Task, TaskGroup, Actors, MainActor, Cancellation, Sendable, Continuations | 10 | Mon 28 – Tue 29 |
 | 05 | `05_Combine` | Basics, Publishers & Subscribers, Operators, Combine vs async/await | 1.5 | — |
 
-**Total:** 42 topics · ~23.5 hours
+**Total:** 43 topics · ~23.5 hours
 
 ## Per-Topic Cycle
 
