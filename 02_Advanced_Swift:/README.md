@@ -8,14 +8,14 @@ Protocols, generics, opaque and existential types, property wrappers, error hand
 
 | # | Topic | Key Concepts | Status |
 |---|-------|--------------|:------:|
-| 01 | `01_Protocols_And_POP` | Default implementations, composition, `AnyObject`, extension dispatch trap | ⬜ |
-| 02 | `02_Any_vs_Some` | `Any`, `some P` (opaque), `any P` (existential) | ⬜ |
-| 03 | `03_Generics` | Generic types, constraints, `where`, `associatedtype` | ⬜ |
-| 04 | `04_Property_Wrappers` | `wrappedValue`, `projectedValue`, `@State` / `@Published` | ⬜ |
-| 05 | `05_Error_Handling` | `throws`, `do-catch`, `Result`, `rethrows`, typed throws | ⬜ |
-| 06 | `06_Method_Dispatch` | Static, table, message dispatch, `final` | ⬜ |
+| 01 | `01_Protocols_And_POP` | Default implementations, `mutating`, `@objc optional`, constrained extensions, DI | ✅ |
+| 02 | `02_Any_vs_Some` | `Any`, `some P` (opaque), `any P` (existential), primary associated types, type erasure | ✅ |
+| 03 | `03_Generics` | Constraints, `where`, same-type constraint, generic decoding, generics vs `any` | ✅ |
+| 04 | `04_Property_Wrappers` | `wrappedValue`, `projectedValue`, `@UserDefault`, `@State` / `@Published` | ✅ |
+| 05 | `05_Error_Handling` | `LocalizedError`, `Result`, `rethrows`, `defer`, typed throws | ✅ |
+| 06 | `06_Method_Dispatch` | Static, table, witness, message dispatch, witness traps, `final` | ✅ |
 
-**0 / 6 topics**
+**6 / 6 topics** ✅
 
 ## File Format
 
@@ -28,9 +28,9 @@ Protocols, generics, opaque and existential types, property wrappers, error hand
 
 ## Status
 
-- [ ] 01_Protocols_And_POP
-- [ ] 02_Any_vs_Some
-- [ ] 03_Generics
-- [ ] 04_Property_Wrappers
-- [ ] 05_Error_Handling
-- [ ] 06_Method_Dispatch
+- [x] 01_Protocols_And_POP
+- [x] 02_Any_vs_Some
+- [x] 03_Generics
+- [x] 04_Property_Wrappers
+- [x] 05_Error_Handling
+- [x] 06_Method_Dispatch

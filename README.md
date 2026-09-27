@@ -14,9 +14,15 @@ Built alongside a full-time job, in public.
 
 * **Every topic ends with working code.** If a session ends with only notes, the session isn't complete.
 * **Explain it aloud.** Swift and system-design rounds are verbal. Understanding the concept is not enough — I should be able to explain it clearly.
-* **One Playground per topic.** Examples are organized as focused blocks: concept → code → output → trade-off.
+* **One Swift file per topic.** Short sections: concept → code → inline output. Compile-time traps marked ❌. Only interview-level concepts, no long notes.
 * **Write the interview answer down.** Relevant questions are added to `17_Interview_Questions/` on the same day.
 * **Name the trade-off.** Every topic should explain when and why I would *not* use the approach.
+
+---
+
+## 🌿 Branches
+
+`main` · `feature/swift` · `feature/ios` · `feature/interview` — feature branches merge into `main` when a folder is done.
 
 ---
 
@@ -36,29 +42,29 @@ The preparation emphasizes the areas that require strong senior-level understand
 
 ## 📊 Progress
 
-| #  | Area                    | Topics | Status |
-| -- | ----------------------- | -----: | :----: |
-| 01 | Swift Fundamentals      |      8 |    ⬜   |
-| 02 | Advanced Swift          |      6 |    ⬜   |
-| 03 | Memory & ARC            |      9 |    ⬜   |
-| 04 | Swift Concurrency       |     15 |    ⬜   |
-| 05 | iOS Fundamentals        |      8 |    ⬜   |
-| 06 | Push Notifications      |      6 |    ⬜   |
-| 07 | UIKit                   |     11 |    ⬜   |
-| 08 | SwiftUI                 |     11 |    ⬜   |
-| 09 | Combine                 |      4 |    ⬜   |
-| 10 | Networking              |      8 |    ⬜   |
-| 11 | Persistence             |      6 |    ⬜   |
-| 12 | Architecture            |      6 |    ⬜   |
-| 13 | SOLID Principles        |      5 |    ⬜   |
-| 14 | Performance & Debugging |      5 |    ⬜   |
-| 15 | Coding Practice         |      4 |    ⬜   |
-| 16 | Unit Testing            |      5 |    ⬜   |
-| 17 | Interview Questions     |      8 |    ⬜   |
-| 18 | Behavioural             |      4 |    ⬜   |
-| 19 | Mock Interviews         |      4 |    ⬜   |
+| #  | Area                    | Topics | Done | Status |
+| -- | ----------------------- | -----: | ---: | :----: |
+| 01 | Swift Fundamentals      |      9 |    9 |   ✅   |
+| 02 | Advanced Swift          |      6 |    6 |   ✅   |
+| 03 | Memory & ARC            |      9 |    0 |   ⬜   |
+| 04 | Swift Concurrency       |     15 |    0 |   ⬜   |
+| 05 | iOS Fundamentals        |      8 |    0 |   ⬜   |
+| 06 | Push Notifications      |      6 |    0 |   ⬜   |
+| 07 | UIKit                   |     11 |    0 |   ⬜   |
+| 08 | SwiftUI                 |     11 |    0 |   ⬜   |
+| 09 | Combine                 |      4 |    0 |   ⬜   |
+| 10 | Networking              |      8 |    0 |   ⬜   |
+| 11 | Persistence             |      6 |    0 |   ⬜   |
+| 12 | Architecture            |      6 |    0 |   ⬜   |
+| 13 | SOLID Principles        |      5 |    0 |   ⬜   |
+| 14 | Performance & Debugging |      5 |    0 |   ⬜   |
+| 15 | Coding Practice         |      4 |    0 |   ⬜   |
+| 16 | Unit Testing            |      5 |    0 |   ⬜   |
+| 17 | Interview Questions     |      8 |    0 |   ⬜   |
+| 18 | Behavioural             |      4 |    0 |   ⬜   |
+| 19 | Mock Interviews         |      4 |    0 |   ⬜   |
 
-**0 / 133 topics**
+**15 / 134 topics** · ⬜ Not started · 🟡 In progress · ✅ Done
 
 ---
 
@@ -77,7 +83,8 @@ Senior_iOS_Interview_Preparation/
 │   ├── 05_Properties
 │   ├── 06_Closures
 │   ├── 07_Higher_Order_Functions
-│   └── 08_Initialization
+│   ├── 08_Initialization
+│   └── 09_Access_Control
 │
 ├── 02_Advanced_Swift/
 │   ├── 01_Protocols_And_POP
@@ -243,8 +250,8 @@ Senior_iOS_Interview_Preparation/
 
 Each topic folder contains:
 
-* `README.md` — concepts, explanations, interview notes, and trade-offs
-* `.playground` — runnable Swift examples
+* `<Topic>.swift` — runnable examples with inline output, interview-level notes, and an Interview Questions list
+* Coding Practice — predict-the-output drills for core topics (closures, ARC, concurrency)
 
 ---
 
@@ -269,11 +276,11 @@ Key topics include:
 
 ## 🚀 Related Repositories
 
-| Repository                                                                                             | Description                                                  |
-| ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------ |
-| **[DSA-Logic-and-Interview-Prep](https://github.com/AnilkumarMedikonda/DSA-Logic-and-Interview-Prep)** | DSA problems, patterns, and interview preparation            |
-| **[iOS-Architecture-Patterns](https://github.com/AnilkumarMedikonda/iOS-Architecture-Patterns)**       | Swift, UIKit, and SwiftUI architecture patterns              |
-| **[iOS_System_Design](https://github.com/AnilkumarMedikonda/iOS_System_Design)**                       | iOS system design, architecture, scalability, and trade-offs |
+| Repository | Description |
+| ---------- | ----------- |
+| **[Top_DSA_Interview_Questions](https://github.com/AnilkumarMedikonda/Top_DSA_Interview_Questions)** | 85 curated DSA interview questions in Swift, 9 pattern phases |
+| **[DSA-Logic-and-Interview-Prep](https://github.com/AnilkumarMedikonda/DSA-Logic-and-Interview-Prep)** | DSA problems, patterns, and interview preparation |
+| **[iOS-Architecture-Patterns](https://github.com/AnilkumarMedikonda/iOS-Architecture-Patterns)** | Swift, UIKit, and SwiftUI architecture patterns |
 
 ---
 
@@ -294,4 +301,3 @@ Senior iOS Engineer
 MIT License.
 
 All notes and implementations are written for educational and interview-preparation purposes.
-
