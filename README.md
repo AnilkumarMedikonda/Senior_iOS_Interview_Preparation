@@ -44,8 +44,8 @@ The preparation emphasizes the areas that require strong senior-level understand
 
 | #  | Area                    | Topics | Done | Status |
 | -- | ----------------------- | -----: | ---: | :----: |
-| 01 | Swift Fundamentals      |      9 |    5 |   🟡   |
-| 02 | Advanced Swift          |      6 |    0 |   ⬜   |
+| 01 | Swift Fundamentals      |      9 |    9 |   ✅   |
+| 02 | Advanced Swift          |      6 |    6 |   ✅   |
 | 03 | Memory & ARC            |      9 |    0 |   ⬜   |
 | 04 | Swift Concurrency       |     15 |    0 |   ⬜   |
 | 05 | iOS Fundamentals        |      8 |    0 |   ⬜   |
@@ -64,7 +64,7 @@ The preparation emphasizes the areas that require strong senior-level understand
 | 18 | Behavioural             |      4 |    0 |   ⬜   |
 | 19 | Mock Interviews         |      4 |    0 |   ⬜   |
 
-**5 / 134 topics** · ⬜ Not started · 🟡 In progress · ✅ Done
+**15 / 134 topics** · ⬜ Not started · 🟡 In progress · ✅ Done
 
 ---
 
@@ -251,7 +251,7 @@ Senior_iOS_Interview_Preparation/
 Each topic folder contains:
 
 * `<Topic>.swift` — runnable examples with inline output, interview-level notes, and an Interview Questions list
-* Output Questions — predict-the-output drills for core topics (closures, ARC, concurrency)
+* Coding Practice — predict-the-output drills for core topics (closures, ARC, concurrency)
 
 ---
 
