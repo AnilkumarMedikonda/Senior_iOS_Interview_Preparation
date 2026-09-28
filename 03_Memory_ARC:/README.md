@@ -8,17 +8,26 @@ Automatic Reference Counting — how Swift manages memory, how retain cycles hap
 
 | # | Topic | Key Concepts | Status |
 |---|-------|--------------|:------:|
-| 01 | `01_ARC_Basics` | Reference counting, when objects are freed, value vs reference types | ⬜ |
-| 02 | `02_Strong_References` | Default ownership, retain count increase | ⬜ |
-| 03 | `03_Weak_References` | `weak var`, auto-nil, must be Optional, delegates | ⬜ |
-| 04 | `04_Unowned_References` | `unowned`, no nil, crash risk, weak vs unowned | ⬜ |
-| 05 | `05_Retain_Cycles` | Class ↔ class cycles, parent–child, delegate cycles | ⬜ |
-| 06 | `06_Closure_Retain_Cycles` | `self → closure → self`, stored closures, escaping ≠ leak | ⬜ |
-| 07 | `07_Capture_Lists` | `[weak self]`, `[unowned self]`, `[value]` capture | ⬜ |
-| 08 | `08_Weak_Self` | `guard let self`, when `[weak self]` is / isn't needed | ⬜ |
-| 09 | `09_Deinit` | `deinit` timing, leak verification, Memory Graph Debugger | ⬜ |
+| 01 | `01_ARC_Basics` | Reference counting, scope, value types, ARC can't break cycles | ✅ |
+| 02 | `02_Strong_References` | Ownership, collections, closures keep objects alive | ✅ |
+| 03 | `03_Weak_References` | `weak var`, auto-nil, must be Optional, weak delegates | ✅ |
+| 04 | `04_Unowned_References` | `unowned`, crash risk, weak vs unowned | ✅ |
+| 05 | `05_Retain_Cycles` | Parent–child, delegate, indirect cycles, finding leaks | ✅ |
+| 06 | `06_Closure_Retain_Cycles` | `self → closure → self`, escaping ≠ leak, real-world sources | ✅ |
+| 07 | `07_Capture_Lists` | `[weak self]`, `[unowned self]`, value capture, `[self]` trap | ✅ |
+| 08 | `08_Weak_Self` | `guard let self` vs `self?`, when it's needed | ✅ |
+| 09 | `09_Deinit` | `deinit` order, cleanup, leak verification | ✅ |
+| 10 | `10_Escaping_vs_NonEscaping` | Memory view — cycle risk, delayed deinit | ✅ |
 
-**0 / 9 topics**
+**10 / 10 topics** ✅
+
+## Coding Practice
+
+| File | Questions |
+|------|-----------|
+| `ARC_CodingPractice` | Q01–Q21 — strong, weak, unowned, cycles, deinit order |
+| `ARC_Closures_CodingPractice` | Q01–Q10 — closures and memory |
+| `EscapingVsNonEscaping_CodingPractice` | Q01–Q08 — escaping order and deinit timing |
 
 ## File Format
 
@@ -26,18 +35,19 @@ Automatic Reference Counting — how Swift manages memory, how retain cycles hap
 - `print("\n========== NN - Title ==========")` per section
 - `deinit` prints to prove objects are freed
 - ✅ allowed / ❌ compile error
-- Interview Questions at the end
-- Separate Coding Practice playground (retain cycle output questions)
+- Interview Questions with one-line answers at the end
+- Separate Coding Practice playgrounds (predict the output)
 - Interview-level concepts only
 
 ## Status
 
-- [ ] 01_ARC_Basics
-- [ ] 02_Strong_References
-- [ ] 03_Weak_References
-- [ ] 04_Unowned_References
-- [ ] 05_Retain_Cycles
-- [ ] 06_Closure_Retain_Cycles
-- [ ] 07_Capture_Lists
-- [ ] 08_Weak_Self
-- [ ] 09_Deinit
+- [x] 01_ARC_Basics
+- [x] 02_Strong_References
+- [x] 03_Weak_References
+- [x] 04_Unowned_References
+- [x] 05_Retain_Cycles
+- [x] 06_Closure_Retain_Cycles
+- [x] 07_Capture_Lists
+- [x] 08_Weak_Self
+- [x] 09_Deinit
+- [x] 10_Escaping_vs_NonEscaping
