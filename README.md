@@ -48,8 +48,8 @@ The preparation emphasizes the areas that require strong senior-level understand
 | 02 | Advanced Swift          |      6 |    6 |   ✅   |
 | 03 | Memory & ARC            |     10 |   10 |   ✅   |
 | 04 | Swift Concurrency       |     15 |   15 |   ✅   |
-| 05 | iOS Fundamentals        |      8 |    0 |   ⬜   |
-| 06 | Push Notifications      |      6 |    0 |   ⬜   |
+| 05 | iOS Fundamentals        |      8 |    8 |   ✅   |
+| 06 | Push Notifications      |      6 |    6 |   ✅   |
 | 07 | UIKit                   |     11 |    0 |   ⬜   |
 | 08 | SwiftUI                 |     11 |    0 |   ⬜   |
 | 09 | Combine                 |      4 |    0 |   ⬜   |
@@ -64,7 +64,7 @@ The preparation emphasizes the areas that require strong senior-level understand
 | 18 | Behavioural             |      4 |    0 |   ⬜   |
 | 19 | Mock Interviews         |      4 |    0 |   ⬜   |
 
-**40 / 135 topics** · ⬜ Not started · 🟡 In progress · ✅ Done
+**54 / 135 topics** · ⬜ Not started · 🟡 In progress · ✅ Done
 
 ---
 
@@ -140,7 +140,8 @@ Senior_iOS_Interview_Preparation/
 │   ├── 03_Device_Token
 │   ├── 04_Foreground_Background_Tap_Handling
 │   ├── 05_Deep_Link_From_Notification
-│   └── 06_Push_Notification_Debugging
+│   ├── 06_Push_Notification_Debugging
+│   └── 07_Push_Notification_Flow
 │
 ├── 07_UIKit/
 │   ├── 01_UIView_UIViewController

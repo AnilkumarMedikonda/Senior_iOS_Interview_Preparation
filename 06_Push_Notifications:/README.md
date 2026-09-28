@@ -8,14 +8,20 @@ How push notifications reach an iOS app — APNs, permission, device tokens, han
 
 | # | Topic | Key Concepts | Status |
 |---|-------|--------------|:------:|
-| 01 | `01_APNs_Basics` | Server → APNs → device flow, payload structure, alert vs silent push | ⬜ |
-| 02 | `02_Permission_And_Registration` | `requestAuthorization`, provisional, `registerForRemoteNotifications` | ⬜ |
-| 03 | `03_Device_Token` | Token format, sending to backend, when it changes | ⬜ |
-| 04 | `04_Foreground_Background_Tap_Handling` | `willPresent`, `didReceive`, app killed vs background | ⬜ |
-| 05 | `05_Deep_Link_From_Notification` | Payload → Route, cold start tap, reuse deep link router | ⬜ |
-| 06 | `06_Push_Notification_Debugging` | Simulator `.apns` files, sandbox vs production, common failures | ⬜ |
+| 01 | `01_APNs_Basics` | Push flow, payload decoding, alert vs silent push, `.p8` vs `.p12` | ✅ |
+| 02 | `02_Permission_And_Registration` | `requestAuthorization`, provisional, status check, Settings fallback | ✅ |
+| 03 | `03_Device_Token` | Data → hex, backend registration, token changes, 410 Unregistered | ✅ |
+| 04 | `04_Foreground_Background_Tap_Handling` | `willPresent`, `didReceive`, action buttons, silent push | ✅ |
+| 05 | `05_Deep_Link_From_Notification` | Payload → Route, cold start pending route, shared router | ✅ |
+| 06 | `06_Push_Notification_Debugging` | Simulator `.apns`, APNs errors, "not arriving" checklist | ✅ |
 
-**0 / 6 topics**
+**6 / 6 topics** ✅
+
+## Flow Chart
+
+| # | File | Contents |
+|---|------|----------|
+| 07 | `07_Push_Notification_Flow` | Registration sequence, delivery decision tree, 6 runnable scenarios |
 
 ## File Format
 
@@ -27,9 +33,10 @@ How push notifications reach an iOS app — APNs, permission, device tokens, han
 
 ## Status
 
-- [ ] 01_APNs_Basics
-- [ ] 02_Permission_And_Registration
-- [ ] 03_Device_Token
-- [ ] 04_Foreground_Background_Tap_Handling
-- [ ] 05_Deep_Link_From_Notification
-- [ ] 06_Push_Notification_Debugging
+- [x] 01_APNs_Basics
+- [x] 02_Permission_And_Registration
+- [x] 03_Device_Token
+- [x] 04_Foreground_Background_Tap_Handling
+- [x] 05_Deep_Link_From_Notification
+- [x] 06_Push_Notification_Debugging
+- [x] 07_Push_Notification_Flow
