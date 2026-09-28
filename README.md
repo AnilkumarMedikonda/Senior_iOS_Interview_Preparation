@@ -46,8 +46,8 @@ The preparation emphasizes the areas that require strong senior-level understand
 | -- | ----------------------- | -----: | ---: | :----: |
 | 01 | Swift Fundamentals      |      9 |    9 |   ✅   |
 | 02 | Advanced Swift          |      6 |    6 |   ✅   |
-| 03 | Memory & ARC            |      9 |    0 |   ⬜   |
-| 04 | Swift Concurrency       |     15 |    0 |   ⬜   |
+| 03 | Memory & ARC            |     10 |   10 |   ✅   |
+| 04 | Swift Concurrency       |     15 |    5 |   🟡   |
 | 05 | iOS Fundamentals        |      8 |    0 |   ⬜   |
 | 06 | Push Notifications      |      6 |    0 |   ⬜   |
 | 07 | UIKit                   |     11 |    0 |   ⬜   |
@@ -64,7 +64,7 @@ The preparation emphasizes the areas that require strong senior-level understand
 | 18 | Behavioural             |      4 |    0 |   ⬜   |
 | 19 | Mock Interviews         |      4 |    0 |   ⬜   |
 
-**15 / 134 topics** · ⬜ Not started · 🟡 In progress · ✅ Done
+**30 / 135 topics** · ⬜ Not started · 🟡 In progress · ✅ Done
 
 ---
 
@@ -103,7 +103,8 @@ Senior_iOS_Interview_Preparation/
 │   ├── 06_Closure_Retain_Cycles
 │   ├── 07_Capture_Lists
 │   ├── 08_Weak_Self
-│   └── 09_Deinit
+│   ├── 09_Deinit
+│   └── 10_Escaping_vs_NonEscaping
 │
 ├── 04_Swift_Concurrency/
 │   ├── 01_Concurrency_Basics
@@ -250,7 +251,7 @@ Senior_iOS_Interview_Preparation/
 
 Each topic folder contains:
 
-* `<Topic>.swift` — runnable examples with inline output, interview-level notes, and an Interview Questions list
+* `<Topic>.swift` — runnable examples with inline output, interview-level notes, and an Interview Questions list with one-line answers
 * Coding Practice — predict-the-output drills for core topics (closures, ARC, concurrency)
 
 ---

@@ -8,11 +8,11 @@ GCD and modern Swift Concurrency — queues, threads, deadlocks, race conditions
 
 | # | Topic | Key Concepts | Status |
 |---|-------|--------------|:------:|
-| 01 | `01_Concurrency_Basics` | Thread, queue, concurrency vs parallelism, main thread rule | ⬜ |
-| 02 | `02_GCD` | `DispatchQueue`, main vs global, QoS, `asyncAfter` | ⬜ |
-| 03 | `03_Serial_vs_Concurrent` | Execution order, custom queues | ⬜ |
-| 04 | `04_Sync_vs_Async` | Blocking vs non-blocking, output order | ⬜ |
-| 05 | `05_Deadlock` | `main.sync` on main, serial queue self-sync | ⬜ |
+| 01 | `01_Concurrency_Basics` | Main thread rule, concurrency vs parallelism, GCD vs async/await | ✅ |
+| 02 | `02_GCD` | main vs global, QoS, `asyncAfter`, `DispatchGroup`, `DispatchWorkItem` | ✅ |
+| 03 | `03_Serial_vs_Concurrent` | Execution order, custom queues, serial queue for shared state | ✅ |
+| 04 | `04_Sync_vs_Async` | Caller blocking, output order, sync return values | ✅ |
+| 05 | `05_Deadlock` | `main.sync` on main, serial self-sync, lock deadlocks | ✅ |
 | 06 | `06_Race_Condition` | Shared mutable state, lost updates | ⬜ |
 | 07 | `07_Thread_Safety` | Serial queue, barrier, `NSLock` | ⬜ |
 | 08 | `08_Async_Await` | `async` functions, `await`, suspension points | ⬜ |
@@ -24,7 +24,7 @@ GCD and modern Swift Concurrency — queues, threads, deadlocks, race conditions
 | 14 | `14_Sendable` | Safe cross-task values, `@Sendable` closures | ⬜ |
 | 15 | `15_Continuations` | Bridging callbacks to async/await | ⬜ |
 
-**0 / 15 topics**
+**5 / 15 topics**
 
 ## File Format
 
@@ -37,11 +37,11 @@ GCD and modern Swift Concurrency — queues, threads, deadlocks, race conditions
 
 ## Status
 
-- [ ] 01_Concurrency_Basics
-- [ ] 02_GCD
-- [ ] 03_Serial_vs_Concurrent
-- [ ] 04_Sync_vs_Async
-- [ ] 05_Deadlock
+- [x] 01_Concurrency_Basics
+- [x] 02_GCD
+- [x] 03_Serial_vs_Concurrent
+- [x] 04_Sync_vs_Async
+- [x] 05_Deadlock
 - [ ] 06_Race_Condition
 - [ ] 07_Thread_Safety
 - [ ] 08_Async_Await
