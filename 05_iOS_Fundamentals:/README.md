@@ -8,16 +8,16 @@ How an iOS app starts, moves between states, and communicates — lifecycle, del
 
 | # | Topic | Key Concepts | Status |
 |---|-------|--------------|:------:|
-| 01 | `01_App_Lifecycle` | Not running → inactive → active → background → suspended | ⬜ |
-| 02 | `02_AppDelegate_SceneDelegate` | App-level vs UI-level events, multi-window, iOS 13+ split | ⬜ |
-| 03 | `03_ViewController_Lifecycle` | `viewDidLoad` → `viewWillAppear` → `viewDidAppear`, layout calls | ⬜ |
-| 04 | `04_Delegation` | Protocol + `weak` delegate, one-to-one communication | ⬜ |
-| 05 | `05_NotificationCenter` | One-to-many broadcast, observers, removal, delegate vs notification | ⬜ |
-| 06 | `06_Deep_Linking` | Custom URL schemes, parsing, routing to screens | ⬜ |
-| 07 | `07_Universal_Links` | `apple-app-site-association`, associated domains, fallback to web | ⬜ |
-| 08 | `08_Background_Tasks` | `BGTaskScheduler`, background fetch, time limits | ⬜ |
+| 01 | `01_App_Lifecycle` | Five states, callback order, interruptions, termination | ✅ |
+| 02 | `02_AppDelegate_SceneDelegate` | Responsibilities, window setup, cold vs warm deep links, SwiftUI App | ✅ |
+| 03 | `03_ViewController_Lifecycle` | Live callbacks, push/pop order, where to put work, common mistakes | ✅ |
+| 04 | `04_Delegation` | Weak delegate, data source, cell → VC, optional methods | ✅ |
+| 05 | `05_NotificationCenter` | One-to-many, `userInfo`, observer removal, threading | ✅ |
+| 06 | `06_Deep_Linking` | Typed routes, `URLComponents` parsing, router, pending routes | ✅ |
+| 07 | `07_Universal_Links` | AASA setup, `NSUserActivity`, custom scheme comparison, gotchas | ✅ |
+| 08 | `08_Background_Tasks` | `beginBackgroundTask`, `BGTaskScheduler`, background `URLSession` | ✅ |
 
-**0 / 8 topics**
+**8 / 8 topics** ✅
 
 ## File Format
 
@@ -29,11 +29,11 @@ How an iOS app starts, moves between states, and communicates — lifecycle, del
 
 ## Status
 
-- [ ] 01_App_Lifecycle
-- [ ] 02_AppDelegate_SceneDelegate
-- [ ] 03_ViewController_Lifecycle
-- [ ] 04_Delegation
-- [ ] 05_NotificationCenter
-- [ ] 06_Deep_Linking
-- [ ] 07_Universal_Links
-- [ ] 08_Background_Tasks
+- [x] 01_App_Lifecycle
+- [x] 02_AppDelegate_SceneDelegate
+- [x] 03_ViewController_Lifecycle
+- [x] 04_Delegation
+- [x] 05_NotificationCenter
+- [x] 06_Deep_Linking
+- [x] 07_Universal_Links
+- [x] 08_Background_Tasks
