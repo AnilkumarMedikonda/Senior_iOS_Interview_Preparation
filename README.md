@@ -47,7 +47,7 @@ The preparation emphasizes the areas that require strong senior-level understand
 | 01 | Swift Fundamentals      |      9 |    9 |   ✅   |
 | 02 | Advanced Swift          |      6 |    6 |   ✅   |
 | 03 | Memory & ARC            |     10 |   10 |   ✅   |
-| 04 | Swift Concurrency       |     15 |    5 |   🟡   |
+| 04 | Swift Concurrency       |     15 |   15 |   ✅   |
 | 05 | iOS Fundamentals        |      8 |    0 |   ⬜   |
 | 06 | Push Notifications      |      6 |    0 |   ⬜   |
 | 07 | UIKit                   |     11 |    0 |   ⬜   |
@@ -64,7 +64,7 @@ The preparation emphasizes the areas that require strong senior-level understand
 | 18 | Behavioural             |      4 |    0 |   ⬜   |
 | 19 | Mock Interviews         |      4 |    0 |   ⬜   |
 
-**30 / 135 topics** · ⬜ Not started · 🟡 In progress · ✅ Done
+**40 / 135 topics** · ⬜ Not started · 🟡 In progress · ✅ Done
 
 ---
 
@@ -121,7 +121,8 @@ Senior_iOS_Interview_Preparation/
 │   ├── 12_MainActor
 │   ├── 13_Task_Cancellation
 │   ├── 14_Sendable
-│   └── 15_Continuations
+│   ├── 15_Continuations
+│   └── 16_Concurrency_Output_Questions
 │
 ├── 05_iOS_Fundamentals/
 │   ├── 01_App_Lifecycle

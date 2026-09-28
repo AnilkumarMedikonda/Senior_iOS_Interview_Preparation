@@ -13,18 +13,24 @@ GCD and modern Swift Concurrency — queues, threads, deadlocks, race conditions
 | 03 | `03_Serial_vs_Concurrent` | Execution order, custom queues, serial queue for shared state | ✅ |
 | 04 | `04_Sync_vs_Async` | Caller blocking, output order, sync return values | ✅ |
 | 05 | `05_Deadlock` | `main.sync` on main, serial self-sync, lock deadlocks | ✅ |
-| 06 | `06_Race_Condition` | Shared mutable state, lost updates | ⬜ |
-| 07 | `07_Thread_Safety` | Serial queue, barrier, `NSLock` | ⬜ |
-| 08 | `08_Async_Await` | `async` functions, `await`, suspension points | ⬜ |
-| 09 | `09_Task` | `Task { }`, `Task.detached`, `async let` | ⬜ |
-| 10 | `10_TaskGroup` | Dynamic parallel work, collecting results | ⬜ |
-| 11 | `11_Actors` | Data isolation, `await` on actor calls, reentrancy | ⬜ |
-| 12 | `12_MainActor` | UI updates, `@MainActor` class / func, `MainActor.run` | ⬜ |
-| 13 | `13_Task_Cancellation` | `cancel()`, `Task.isCancelled`, `checkCancellation()` | ⬜ |
-| 14 | `14_Sendable` | Safe cross-task values, `@Sendable` closures | ⬜ |
-| 15 | `15_Continuations` | Bridging callbacks to async/await | ⬜ |
+| 06 | `06_Race_Condition` | Lost updates, check-then-act, collection crashes, Thread Sanitizer | ✅ |
+| 07 | `07_Thread_Safety` | Serial queue, barrier, `NSLock`, atomic check-then-act | ✅ |
+| 08 | `08_Async_Await` | `async throws`, sequential awaits, `Task` bridging, suspension points | ✅ |
+| 09 | `09_Task` | `Task { }`, `Task.detached`, `async let`, structured vs unstructured | ✅ |
+| 10 | `10_TaskGroup` | Dynamic parallel work, ordered results, throwing groups, concurrency limit | ✅ |
+| 11 | `11_Actors` | Isolation, `nonisolated`, reentrancy bug + in-flight Task fix | ✅ |
+| 12 | `12_MainActor` | `@MainActor` ViewModel, `MainActor.run`, heavy work off main | ✅ |
+| 13 | `13_Task_Cancellation` | Cooperative cancel, `checkCancellation()`, search debounce | ✅ |
+| 14 | `14_Sendable` | Value types, final classes, actors, `@unchecked`, Swift 6 errors | ✅ |
+| 15 | `15_Continuations` | Checked / throwing continuations, resume once, delegate bridging | ✅ |
 
-**5 / 15 topics**
+**15 / 15 topics** ✅
+
+## Coding Practice
+
+| # | File | Questions |
+|---|------|-----------|
+| 16 | `Concurrency_OutputQuestions` | Q01–Q20 — queue order, deadlock, group, barrier, semaphore, Task, actor, TaskGroup |
 
 ## File Format
 
@@ -42,13 +48,14 @@ GCD and modern Swift Concurrency — queues, threads, deadlocks, race conditions
 - [x] 03_Serial_vs_Concurrent
 - [x] 04_Sync_vs_Async
 - [x] 05_Deadlock
-- [ ] 06_Race_Condition
-- [ ] 07_Thread_Safety
-- [ ] 08_Async_Await
-- [ ] 09_Task
-- [ ] 10_TaskGroup
-- [ ] 11_Actors
-- [ ] 12_MainActor
-- [ ] 13_Task_Cancellation
-- [ ] 14_Sendable
-- [ ] 15_Continuations
+- [x] 06_Race_Condition
+- [x] 07_Thread_Safety
+- [x] 08_Async_Await
+- [x] 09_Task
+- [x] 10_TaskGroup
+- [x] 11_Actors
+- [x] 12_MainActor
+- [x] 13_Task_Cancellation
+- [x] 14_Sendable
+- [x] 15_Continuations
+- [x] 16_Concurrency_Output_Questions
