@@ -8,19 +8,19 @@ Building and tuning UIKit screens — views, Auto Layout, lists, cell reuse, pag
 
 | # | Topic | Key Concepts | Status |
 |---|-------|--------------|:------:|
-| 01 | `01_UIView_UIViewController` | View hierarchy, responder chain, child view controllers | ⬜ |
-| 02 | `02_Auto_Layout` | Anchors, `translatesAutoresizingMaskIntoConstraints`, priorities, conflicts | ⬜ |
-| 03 | `03_Content_Hugging_Compression` | Intrinsic content size, hugging vs compression resistance | ⬜ |
-| 04 | `04_UITableView` | Data source / delegate, diffable data source | ⬜ |
-| 05 | `05_Cell_Reuse` | `dequeueReusableCell`, `prepareForReuse`, stale image bug | ⬜ |
-| 06 | `06_UICollectionView` | Flow layout, compositional layout, diffable data source | ⬜ |
-| 07 | `07_Dynamic_Cell_Height` | Self-sizing cells, `automaticDimension`, estimated height | ⬜ |
-| 08 | `08_Pagination` | Load more near the end, prefetching, duplicate request guard | ⬜ |
-| 09 | `09_UI_Performance` | Main thread work, image decoding, offscreen rendering, dropped frames | ⬜ |
-| 10 | `10_Frame_vs_Bounds` | Superview vs own coordinate space, transforms | ⬜ |
-| 11 | `11_Layout_Cycle` | `setNeedsLayout`, `layoutIfNeeded`, `layoutSubviews`, update constraints pass | ⬜ |
+| 01 | `01_UIView_UIViewController` | View hierarchy, responder chain, child view controllers | ✅ |
+| 02 | `02_Auto_Layout` | Anchors, priorities, layout switching, conflict debugging | ✅ |
+| 03 | `03_Content_Hugging_Compression` | Intrinsic size, name/price row demo, custom intrinsic size | ✅ |
+| 04 | `04_UITableView` | Data source / delegate, safe row inserts, diffable data source | ✅ |
+| 05 | `05_Cell_Reuse` | Reuse proof, `prepareForReuse`, stale async image fix | ✅ |
+| 06 | `06_UICollectionView` | Flow grid, compositional layout, `CellRegistration` | ✅ |
+| 07 | `07_Dynamic_Cell_Height` | Self-sizing cells, broken chain demo, runtime resizing | ✅ |
+| 08 | `08_Pagination` | Load-more trigger, loading guards, retry, offset vs cursor | ✅ |
+| 09 | `09_UI_Performance` | Frame budget, image memory, offscreen rendering, Instruments | ✅ |
+| 10 | `10_Frame_vs_Bounds` | Rotation, scroll offset, center resizing, coordinate conversion | ✅ |
+| 11 | `11_Layout_Cycle` | `setNeedsLayout` batching, triggers, constraint animation | ✅ |
 
-**0 / 11 topics**
+**11 / 11 topics** ✅
 
 ## File Format
 
@@ -32,14 +32,14 @@ Building and tuning UIKit screens — views, Auto Layout, lists, cell reuse, pag
 
 ## Status
 
-- [ ] 01_UIView_UIViewController
-- [ ] 02_Auto_Layout
-- [ ] 03_Content_Hugging_Compression
-- [ ] 04_UITableView
-- [ ] 05_Cell_Reuse
-- [ ] 06_UICollectionView
-- [ ] 07_Dynamic_Cell_Height
-- [ ] 08_Pagination
-- [ ] 09_UI_Performance
-- [ ] 10_Frame_vs_Bounds
-- [ ] 11_Layout_Cycle
+- [x] 01_UIView_UIViewController
+- [x] 02_Auto_Layout
+- [x] 03_Content_Hugging_Compression
+- [x] 04_UITableView
+- [x] 05_Cell_Reuse
+- [x] 06_UICollectionView
+- [x] 07_Dynamic_Cell_Height
+- [x] 08_Pagination
+- [x] 09_UI_Performance
+- [x] 10_Frame_vs_Bounds
+- [x] 11_Layout_Cycle

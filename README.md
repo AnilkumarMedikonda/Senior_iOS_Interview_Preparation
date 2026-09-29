@@ -50,7 +50,7 @@ The preparation emphasizes the areas that require strong senior-level understand
 | 04 | Swift Concurrency       |     15 |   15 |   ✅   |
 | 05 | iOS Fundamentals        |      8 |    8 |   ✅   |
 | 06 | Push Notifications      |      6 |    6 |   ✅   |
-| 07 | UIKit                   |     11 |    0 |   ⬜   |
+| 07 | UIKit                   |     11 |   11 |   ✅   |
 | 08 | SwiftUI                 |     11 |    0 |   ⬜   |
 | 09 | Combine                 |      4 |    0 |   ⬜   |
 | 10 | Networking              |      8 |    0 |   ⬜   |
@@ -64,7 +64,7 @@ The preparation emphasizes the areas that require strong senior-level understand
 | 18 | Behavioural             |      4 |    0 |   ⬜   |
 | 19 | Mock Interviews         |      4 |    0 |   ⬜   |
 
-**54 / 135 topics** · ⬜ Not started · 🟡 In progress · ✅ Done
+**65 / 135 topics** · ⬜ Not started · 🟡 In progress · ✅ Done
 
 ---
 
