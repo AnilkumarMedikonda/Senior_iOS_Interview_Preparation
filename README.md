@@ -54,7 +54,7 @@ The preparation emphasizes the areas that require strong senior-level understand
 | 08 | SwiftUI                 |     11 |   11 |   ✅   |
 | 09 | Combine                 |      4 |    4 |   ✅   |
 | 10 | Networking              |      8 |    8 |   ✅   |
-| 11 | Persistence             |      6 |    0 |   ⬜   |
+| 11 | Persistence             |      6 |    6 |   ✅   |
 | 12 | Architecture            |      6 |    0 |   ⬜   |
 | 13 | SOLID Principles        |      5 |    0 |   ⬜   |
 | 14 | Performance & Debugging |      5 |    0 |   ⬜   |
@@ -64,7 +64,7 @@ The preparation emphasizes the areas that require strong senior-level understand
 | 18 | Behavioural             |      4 |    0 |   ⬜   |
 | 19 | Mock Interviews         |      4 |    0 |   ⬜   |
 
-**88 / 135 topics** · ⬜ Not started · 🟡 In progress · ✅ Done
+**94 / 135 topics** · ⬜ Not started · 🟡 In progress · ✅ Done
 
 ---
 
