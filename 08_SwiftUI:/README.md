@@ -8,19 +8,19 @@ Declarative UI — views as a function of state, property wrappers for data flow
 
 | # | Topic | Key Concepts | Status |
 |---|-------|--------------|:------:|
-| 01 | `01_SwiftUI_Basics` | Declarative UI, `View` protocol, `some View`, modifiers, stacks | ⬜ |
-| 02 | `02_State` | `@State`, view-owned value state, source of truth | ⬜ |
-| 03 | `03_Binding` | `@Binding`, `$` projected value, two-way data flow | ⬜ |
-| 04 | `04_StateObject` | `@StateObject`, view-owned reference model, lifetime | ⬜ |
-| 05 | `05_ObservedObject` | `@ObservedObject`, passed-in model, recreation bug | ⬜ |
-| 06 | `06_Environment` | `@Environment`, `@EnvironmentObject`, dependency passing | ⬜ |
-| 07 | `07_Observation_Framework` | `@Observable`, `@Bindable`, fine-grained updates (iOS 17+) | ⬜ |
-| 08 | `08_View_Identity` | Structural vs explicit identity, `id()`, `ForEach` IDs, state reset | ⬜ |
-| 09 | `09_NavigationStack` | `NavigationStack`, `NavigationPath`, programmatic / deep link navigation | ⬜ |
-| 10 | `10_SwiftUI_Performance` | Body re-evaluation, small views, `Equatable`, lazy stacks | ⬜ |
-| 11 | `11_UIKit_SwiftUI_Interop` | `UIHostingController`, `UIViewRepresentable`, `Coordinator` | ⬜ |
+| 01 | `01_SwiftUI_Basics` | Declarative model, cheap view structs, modifier order, conditional views | ✅ |
+| 02 | `02_State` | `@State`, survival on recreation, initial value trap, `_printChanges` | ✅ |
+| 03 | `03_Binding` | Parent-child editing, struct property bindings, custom bindings | ✅ |
+| 04 | `04_StateObject` | View-owned ViewModel, lifetime, parameter trap + `.id()` fix | ✅ |
+| 05 | `05_ObservedObject` | Recreation bug, shared model, manual `objectWillChange` | ✅ |
+| 06 | `06_Environment` | System values, custom keys, `@EnvironmentObject`, when to use | ✅ |
+| 07 | `07_Observation_Framework` | `@Observable` fine-grained updates vs ObservableObject, `@Bindable` | ✅ |
+| 08 | `08_View_Identity` | Structural vs explicit identity, `.id()` reset, ForEach index bug | ✅ |
+| 09 | `09_NavigationStack` | Typed routes, Router, programmatic navigation, deep link path | ✅ |
+| 10 | `10_SwiftUI_Performance` | Cheap body, view splitting, lazy stacks, 19 interview questions | ✅ |
+| 11 | `11_UIKit_SwiftUI_Interop` | `UIViewRepresentable`, Coordinator, `UIHostingController` | ✅ |
 
-**0 / 11 topics**
+**11 / 11 topics** ✅
 
 ## File Format
 
@@ -33,14 +33,14 @@ Declarative UI — views as a function of state, property wrappers for data flow
 
 ## Status
 
-- [ ] 01_SwiftUI_Basics
-- [ ] 02_State
-- [ ] 03_Binding
-- [ ] 04_StateObject
-- [ ] 05_ObservedObject
-- [ ] 06_Environment
-- [ ] 07_Observation_Framework
-- [ ] 08_View_Identity
-- [ ] 09_NavigationStack
-- [ ] 10_SwiftUI_Performance
-- [ ] 11_UIKit_SwiftUI_Interop
+- [x] 01_SwiftUI_Basics
+- [x] 02_State
+- [x] 03_Binding
+- [x] 04_StateObject
+- [x] 05_ObservedObject
+- [x] 06_Environment
+- [x] 07_Observation_Framework
+- [x] 08_View_Identity
+- [x] 09_NavigationStack
+- [x] 10_SwiftUI_Performance
+- [x] 11_UIKit_SwiftUI_Interop
