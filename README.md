@@ -35,7 +35,7 @@ The preparation emphasizes the areas that require strong senior-level understand
 3. **Networking** — URLSession, error handling, authentication, token refresh, cancellation
 4. **Swift & Advanced Swift** — protocols, generics, closures, property wrappers, dispatch
 5. **UIKit & SwiftUI** — lifecycle, state management, navigation, performance, interoperability
-6. **Architecture** — MVVM, Clean Architecture, Coordinator, Repository, Dependency Injection
+6. **Architecture & Patterns** — MVVM, Coordinator, VIPER, Clean Architecture, DI, Repository
 7. **Performance & Debugging** — Instruments, memory, scrolling, main-thread performance, crashes
 
 ---
@@ -55,16 +55,14 @@ The preparation emphasizes the areas that require strong senior-level understand
 | 09 | Combine                 |      4 |    4 |   ✅   |
 | 10 | Networking              |      8 |    8 |   ✅   |
 | 11 | Persistence             |      6 |    6 |   ✅   |
-| 12 | Architecture            |      6 |    0 |   ⬜   |
-| 13 | SOLID Principles        |      5 |    0 |   ⬜   |
-| 14 | Performance & Debugging |      5 |    0 |   ⬜   |
-| 15 | Coding Practice         |      4 |    0 |   ⬜   |
+| 12 | Architecture            |      5 |    0 |   ⬜   |
+| 13 | Design Patterns         |      6 |    0 |   ⬜   |
+| 14 | SOLID Principles        |      5 |    0 |   ⬜   |
+| 15 | Performance & Debugging |      3 |    0 |   ⬜   |
 | 16 | Unit Testing            |      5 |    0 |   ⬜   |
 | 17 | Interview Questions     |      8 |    0 |   ⬜   |
-| 18 | Behavioural             |      4 |    0 |   ⬜   |
-| 19 | Mock Interviews         |      4 |    0 |   ⬜   |
 
-**94 / 135 topics** · ⬜ Not started · 🟡 In progress · ✅ Done
+**94 / 126 topics** · ⬜ Not started · 🟡 In progress · ✅ Done
 
 ---
 
@@ -196,30 +194,29 @@ Senior_iOS_Interview_Preparation/
 ├── 12_Architecture/
 │   ├── 01_MVC
 │   ├── 02_MVVM
-│   ├── 03_Clean_Architecture
-│   ├── 04_Coordinator
-│   ├── 05_Repository
-│   └── 06_Dependency_Injection
+│   ├── 03_Coordinator
+│   ├── 04_VIPER
+│   └── 05_Clean_Architecture
 │
-├── 13_SOLID_Principles/
+├── 13_Design_Patterns/
+│   ├── 01_Singleton
+│   ├── 02_Factory
+│   ├── 03_Observer
+│   ├── 04_Adapter
+│   ├── 05_Dependency_Injection
+│   └── 06_Repository
+│
+├── 14_SOLID_Principles/
 │   ├── 01_SRP_Single_Responsibility
 │   ├── 02_OCP_Open_Closed
 │   ├── 03_LSP_Liskov_Substitution
 │   ├── 04_ISP_Interface_Segregation
 │   └── 05_DIP_Dependency_Inversion
 │
-├── 14_Performance_Debugging/
-│   ├── 01_Performance_Basics
-│   ├── 02_Instruments
-│   ├── 03_Memory_And_Leaks
-│   ├── 04_Main_Thread_And_Scrolling_Performance
-│   └── 05_Crash_Debugging
-│
-├── 15_Coding_Practice/
-│   ├── 01_LRU_Cache
-│   ├── 02_Debounce
-│   ├── 03_API_Client
-│   └── 04_Token_Refresh
+├── 15_Performance_Debugging/
+│   ├── 01_Instruments_Overview
+│   ├── 02_Memory_Leaks_And_Hangs
+│   └── 03_Crash_Debugging
 │
 ├── 16_Unit_Testing/
 │   ├── 01_XCTest_Basics
@@ -228,27 +225,15 @@ Senior_iOS_Interview_Preparation/
 │   ├── 04_Testing_Async_Code
 │   └── 05_Testable_Architecture
 │
-├── 17_Interview_Questions/
-│   ├── 01_Swift_Questions
-│   ├── 02_iOS_Questions
-│   ├── 03_SwiftUI_Questions
-│   ├── 04_Concurrency_Questions
-│   ├── 05_Networking_Questions
-│   ├── 06_Architecture_Questions
-│   ├── 07_Performance_Questions
-│   └── 08_Senior_Level_Questions
-│
-├── 18_Behavioural/
-│   ├── 01_Feature_Owned_End_To_End
-│   ├── 02_Production_Bug
-│   ├── 03_Technical_Disagreement
-│   └── 04_Unfamiliar_Codebase
-│
-└── 19_Mock_Interviews/
-    ├── 01_Swift_Mock
-    ├── 02_Concurrency_Mock
-    ├── 03_Architecture_Mock
-    └── 04_Full_Senior_iOS_Mock
+└── 17_Interview_Questions/
+    ├── 01_Swift_Questions
+    ├── 02_iOS_Questions
+    ├── 03_SwiftUI_Questions
+    ├── 04_Concurrency_Questions
+    ├── 05_Networking_Questions
+    ├── 06_Architecture_Questions
+    ├── 07_Performance_Questions
+    └── 08_Senior_Level_Questions
 ```
 
 Each topic folder contains:
