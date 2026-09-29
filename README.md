@@ -52,7 +52,7 @@ The preparation emphasizes the areas that require strong senior-level understand
 | 06 | Push Notifications      |      6 |    6 |   ✅   |
 | 07 | UIKit                   |     11 |   11 |   ✅   |
 | 08 | SwiftUI                 |     11 |   11 |   ✅   |
-| 09 | Combine                 |      4 |    0 |   ⬜   |
+| 09 | Combine                 |      4 |    4 |   ✅   |
 | 10 | Networking              |      8 |    0 |   ⬜   |
 | 11 | Persistence             |      6 |    0 |   ⬜   |
 | 12 | Architecture            |      6 |    0 |   ⬜   |
@@ -64,7 +64,7 @@ The preparation emphasizes the areas that require strong senior-level understand
 | 18 | Behavioural             |      4 |    0 |   ⬜   |
 | 19 | Mock Interviews         |      4 |    0 |   ⬜   |
 
-**76 / 135 topics** · ⬜ Not started · 🟡 In progress · ✅ Done
+**80 / 135 topics** · ⬜ Not started · 🟡 In progress · ✅ Done
 
 ---
 

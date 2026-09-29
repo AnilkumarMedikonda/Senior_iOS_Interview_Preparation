@@ -9,11 +9,11 @@ Apple's reactive framework — values over time as publishers, transformed with 
 | # | Topic | Key Concepts | Status |
 |---|-------|--------------|:------:|
 | 01 | `01_Combine_Basics` | Pipeline, failure ends stream, `AnyCancellable` storage, Future vs Deferred, sink retain cycle | ✅ |
-| 02 | `02_Publishers_And_Subscribers` | `Just`, `PassthroughSubject`, `CurrentValueSubject`, `@Published`, `sink`, `assign` | ⬜ |
-| 03 | `03_Operators` | `map`, `filter`, `debounce`, `removeDuplicates`, `combineLatest`, `flatMap`, `receive(on:)` | ⬜ |
-| 04 | `04_Combine_vs_AsyncAwait` | Streams vs single values, `AsyncSequence`, `.values`, when to use which | ⬜ |
+| 02 | `02_Publishers_And_Subscribers` | Subjects, `@Published` willSet trap, `assign` cycle, `AnyPublisher` | ✅ |
+| 03 | `03_Operators` | `combineLatest`, `debounce`, `switchToLatest`, `retry`, `receive(on:)` | ✅ |
+| 04 | `04_Combine_vs_AsyncAwait` | Mental model, `.values`, Future bridge, `AsyncStream`, when to use which | ✅ |
 
-**1 / 4 topics**
+**4 / 4 topics** ✅
 
 ## File Format
 
@@ -26,6 +26,6 @@ Apple's reactive framework — values over time as publishers, transformed with 
 ## Status
 
 - [x] 01_Combine_Basics
-- [ ] 02_Publishers_And_Subscribers
-- [ ] 03_Operators
-- [ ] 04_Combine_vs_AsyncAwait
+- [x] 02_Publishers_And_Subscribers
+- [x] 03_Operators
+- [x] 04_Combine_vs_AsyncAwait
