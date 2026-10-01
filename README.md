@@ -55,14 +55,14 @@ The preparation emphasizes the areas that require strong senior-level understand
 | 09 | Combine                 |      4 |    4 |   ✅   |
 | 10 | Networking              |      8 |    8 |   ✅   |
 | 11 | Persistence             |      6 |    6 |   ✅   |
-| 12 | Architecture            |      5 |    0 |   ⬜   |
+| 12 | Architecture            |      5 |    5 |   ✅   |
 | 13 | Design Patterns         |      6 |    0 |   ⬜   |
 | 14 | SOLID Principles        |      5 |    0 |   ⬜   |
 | 15 | Performance & Debugging |      3 |    0 |   ⬜   |
 | 16 | Unit Testing            |      5 |    0 |   ⬜   |
 | 17 | Interview Questions     |      8 |    0 |   ⬜   |
 
-**94 / 126 topics** · ⬜ Not started · 🟡 In progress · ✅ Done
+**99 / 126 topics** · ⬜ Not started · 🟡 In progress · ✅ Done
 
 ---
 

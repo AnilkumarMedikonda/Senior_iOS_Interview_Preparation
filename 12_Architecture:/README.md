@@ -8,13 +8,33 @@ How to structure an iOS app so it stays testable and easy to change — who owns
 
 | # | Topic | Key Concepts | Status |
 |---|-------|--------------|:------:|
-| 01 | `01_MVC` | Model–View–Controller, Massive View Controller problem | ⬜ |
-| 02 | `02_MVVM` | ViewModel, bindings (Combine / `@Observable`), testable logic | ⬜ |
-| 03 | `03_Coordinator` | Navigation out of view controllers, child coordinators, MVVM-C | ⬜ |
-| 04 | `04_VIPER` | View, Interactor, Presenter, Entity, Router — when it's worth it | ⬜ |
-| 05 | `05_Clean_Architecture` | Layers, dependency rule, use cases, domain vs data | ⬜ |
+| 01 | `01_MVC` | Model–View–Controller, reusable API Client, Massive View Controller | ✅ |
+| 02 | `02_MVVM` | ViewModel state, Repository, binding, DI, mock testing | ✅ |
+| 03 | `03_Coordinator` | MVVM-C, ViewModel events, Coordinator owns screens + navigation | ✅ |
+| 04 | `04_VIPER` | View, Interactor, Presenter, Entity, Router, Module Builder wiring | ✅ |
+| 05 | `05_Clean_Architecture` | Presentation / Domain / Data, UseCase rules, DTO → Entity, dependency rule | ✅ |
 
-**0 / 5 topics**
+**5 / 5 topics** ✅
+
+## Extras
+
+| File | What it shows |
+|------|---------------|
+| `Architecture_Map.swift` | Same feature built in all 5 architectures — where each responsibility lives |
+| `Architecture_API_Flow_Example.swift` | One end-to-end example: MVVM-C + Clean layers + API flow + extension helpers |
+| `Architecture_Diagrams/` | Colour diagrams with per-layer notes (PNG + SVG) |
+| `Architecture_Posters/` | One-page posters per architecture: diagram, flow, structure, code, pros/cons (PNG + SVG) |
+
+## Quick Comparison
+
+| | MVC | MVVM | MVVM-C | VIPER | Clean |
+|---|:-:|:-:|:-:|:-:|:-:|
+| Complexity | Low | Medium | Medium | High | High |
+| Testability | Low | Good | Good | Very good | Very good |
+| Navigation | VC | VC | Coordinator | Router | Coordinator |
+| Best for | Small screens | Most apps | Multi-screen apps | Huge teams | Large, long-lived apps |
+
+> Senior default: **MVVM-C**, adding **Clean** layers (UseCases, Repositories) when business logic is complex.
 
 ## Architecture vs Pattern vs Principle
 
@@ -26,16 +46,14 @@ How to structure an iOS app so it stays testable and easy to change — who owns
 
 ## File Format
 
-- One `.swift` file per topic — concept → code → inline output
-- `print("\n========== NN - Title ==========")` per section
-- ✅ allowed / ❌ compile error
+- One `.swift` playground per topic — concept → code → inline output
 - Interview Questions with one-line answers at the end
 - Interview-level concepts only
 
 ## Status
 
-- [ ] 01_MVC
-- [ ] 02_MVVM
-- [ ] 03_Coordinator
-- [ ] 04_VIPER
-- [ ] 05_Clean_Architecture
+- [x] 01_MVC
+- [x] 02_MVVM
+- [x] 03_Coordinator
+- [x] 04_VIPER
+- [x] 05_Clean_Architecture
