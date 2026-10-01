@@ -6,22 +6,22 @@ Final revision — the highest-priority senior iOS interview questions from ever
 
 ## Topics
 
-| # | Topic | Covers | Status |
-|---|-------|--------|:------:|
-| 01 | `01_Swift_Questions` | Value vs reference, optionals, closures, protocols, generics, `any` vs `some`, ARC | ⬜ |
-| 02 | `02_iOS_Questions` | App & VC lifecycle, delegation, deep links, push, UIKit lists, Auto Layout, persistence | ⬜ |
-| 03 | `03_SwiftUI_Questions` | State ownership, property wrappers, `@Observable`, view identity, navigation, Combine | ⬜ |
-| 04 | `04_Concurrency_Questions` | GCD, async/await, Task, actors, `@MainActor`, Sendable, cancellation, race conditions | ⬜ |
-| 05 | `05_Networking_Questions` | URLSession, API client design, errors, token refresh, caching, SSL pinning | ⬜ |
-| 06 | `06_Architecture_Questions` | MVC → MVVM → MVVM-C → VIPER → Clean, design patterns, SOLID, testing | ⬜ |
-| 07 | `07_Performance_Questions` | Scrolling, memory, leaks, hangs, Instruments, crashes | ⬜ |
-| 08 | `08_Senior_Level_Questions` | Design decisions, trade-offs, production incidents, scaling a codebase | ⬜ |
+| # | Topic | Covers | Qs | Status |
+|---|-------|--------|:--:|:------:|
+| 01 | `01_Swift_Questions` | Value vs reference, optionals, closures, protocols, generics, `any` vs `some`, ARC | 22 | ✅ |
+| 02 | `02_iOS_Questions` | App & VC lifecycle, delegation, deep links, push, UIKit lists, Auto Layout, persistence | 20 | ✅ |
+| 03 | `03_SwiftUI_Questions` | State ownership, property wrappers, `@Observable`, view identity, navigation, Combine | 19 | ✅ |
+| 04 | `04_Concurrency_Questions` | GCD, async/await, Task, actors, `@MainActor`, Sendable, cancellation, race conditions | 18 | ✅ |
+| 05 | `05_Networking_Questions` | URLSession, API client design, errors, token refresh, caching, SSL pinning | 18 | ✅ |
+| 06 | `06_Architecture_Questions` | MVC → MVVM → MVVM-C → VIPER → Clean, design patterns, SOLID, testing | 20 | ✅ |
+| 07 | `07_Performance_Questions` | Scrolling, memory, leaks, hangs, Instruments, crashes | 17 | ✅ |
+| 08 | `08_Senior_Level_Questions` | Design decisions, trade-offs, production incidents, scaling a codebase | 20 | ✅ |
 
-**0 / 8 topics**
+**8 / 8 topics** ✅ · **154 questions**
 
 ## File Format
 
-Each folder: `Topic_Questions.txt`
+Each folder: `Topic_Questions.txt` (plain text) + `TopicQuestions.swift` (playground with code proofs)
 
 ```
 Q1. Question?
@@ -36,6 +36,7 @@ The question the interviewer usually asks next.
 - High-priority questions only — not everything
 - Answers short enough to say out loud
 - Links back to the topic folder for the details
+- Playground proves the answer with a tiny runnable example (`DEBUG Q##` output)
 
 ## How to Use
 
@@ -46,11 +47,11 @@ The question the interviewer usually asks next.
 
 ## Status
 
-- [ ] 01_Swift_Questions
-- [ ] 02_iOS_Questions
-- [ ] 03_SwiftUI_Questions
-- [ ] 04_Concurrency_Questions
-- [ ] 05_Networking_Questions
-- [ ] 06_Architecture_Questions
-- [ ] 07_Performance_Questions
-- [ ] 08_Senior_Level_Questions
+- [x] 01_Swift_Questions
+- [x] 02_iOS_Questions
+- [x] 03_SwiftUI_Questions
+- [x] 04_Concurrency_Questions
+- [x] 05_Networking_Questions
+- [x] 06_Architecture_Questions
+- [x] 07_Performance_Questions
+- [x] 08_Senior_Level_Questions
