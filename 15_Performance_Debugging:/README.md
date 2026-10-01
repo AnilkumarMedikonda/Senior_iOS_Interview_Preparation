@@ -8,11 +8,11 @@ High-level only — the tools and workflow to find slow screens, leaks, hangs, a
 
 | # | Topic | Key Concepts | Status |
 |---|-------|--------------|:------:|
-| 01 | `01_Instruments_Overview` | Time Profiler, Allocations, Leaks, Animation Hitches, SwiftUI instrument — which tool for which problem | ⬜ |
-| 02 | `02_Memory_Leaks_And_Hangs` | Retain cycles, Memory Graph Debugger, main-thread hangs, watchdog | ⬜ |
-| 03 | `03_Crash_Debugging` | Crash logs, symbolication, common crash types, Xcode Organizer, Crashlytics | ⬜ |
+| 01 | `01_Instruments_Overview` | Time Profiler, Allocations, Leaks, Animation Hitches, SwiftUI instrument — which tool for which problem | ✅ |
+| 02 | `02_Memory_Leaks_And_Hangs` | Retain cycles, Memory Graph Debugger, main-thread hangs, watchdog | ✅ |
+| 03 | `03_Crash_Debugging` | Crash logs, symbolication, common crash types, Xcode Organizer, Crashlytics | ✅ |
 
-**0 / 3 topics**
+**3 / 3 topics** ✅
 
 Each folder: `Topic.swift` (small runnable demo) + `Topic_Notes.txt` (tools + investigation steps).
 
@@ -38,6 +38,6 @@ Reproduce → Measure (Instruments) → Find the real bottleneck → Fix → Mea
 
 ## Status
 
-- [ ] 01_Instruments_Overview
-- [ ] 02_Memory_Leaks_And_Hangs
-- [ ] 03_Crash_Debugging
+- [x] 01_Instruments_Overview
+- [x] 02_Memory_Leaks_And_Hangs
+- [x] 03_Crash_Debugging

@@ -57,12 +57,12 @@ The preparation emphasizes the areas that require strong senior-level understand
 | 11 | Persistence             |      6 |    6 |   ✅   |
 | 12 | Architecture            |      5 |    5 |   ✅   |
 | 13 | Design Patterns         |      9 |    9 |   ✅   |
-| 14 | SOLID Principles        |      5 |    0 |   ⬜   |
-| 15 | Performance & Debugging |      3 |    0 |   ⬜   |
+| 14 | SOLID Principles        |      5 |    5 |   ✅   |
+| 15 | Performance & Debugging |      3 |    3 |   ✅   |
 | 16 | Unit Testing            |      5 |    0 |   ⬜   |
 | 17 | Interview Questions     |      8 |    0 |   ⬜   |
 
-**108 / 129 topics** · ⬜ Not started · 🟡 In progress · ✅ Done
+**116 / 129 topics** · ⬜ Not started · 🟡 In progress · ✅ Done
 
 ---
 
