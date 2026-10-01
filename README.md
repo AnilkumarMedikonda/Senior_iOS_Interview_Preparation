@@ -57,12 +57,12 @@ The preparation emphasizes the areas that require strong senior-level understand
 | 11 | Persistence             |      6 |    6 |   ✅   |
 | 12 | Architecture            |      5 |    5 |   ✅   |
 | 13 | Design Patterns         |      9 |    9 |   ✅   |
-| 14 | SOLID Principles        |      5 |    0 |   ⬜   |
-| 15 | Performance & Debugging |      3 |    0 |   ⬜   |
-| 16 | Unit Testing            |      5 |    0 |   ⬜   |
-| 17 | Interview Questions     |      8 |    0 |   ⬜   |
+| 14 | SOLID Principles        |      5 |    5 |   ✅   |
+| 15 | Performance & Debugging |      3 |    3 |   ✅   |
+| 16 | Unit Testing            |      5 |    5 |   ✅   |
+| 17 | Interview Questions     |      8 |    8 |   ✅   |
 
-**108 / 129 topics** · ⬜ Not started · 🟡 In progress · ✅ Done
+**129 / 129 topics** ✅ · 154 interview questions · ⬜ Not started · 🟡 In progress · ✅ Done
 
 ---
 
@@ -242,7 +242,14 @@ Senior_iOS_Interview_Preparation/
 Each topic folder contains:
 
 * `<Topic>.swift` — runnable examples with inline output, interview-level notes, and an Interview Questions list with one-line answers
+* `<Topic>_Notes.txt` — plain-text concept notes for quick revision (Design Patterns, SOLID, Performance, Unit Testing, and selected Networking topics)
 * Coding Practice — predict-the-output drills for core topics (closures, ARC, concurrency)
+* XCTest playgrounds (`16_Unit_Testing`) run real tests with `defaultTestSuite.run()`
+
+Each `17_Interview_Questions` folder contains:
+
+* `<Topic>_Questions.txt` — question → short spoken answer → usual follow-up
+* `<Topic>Questions.swift` — the same questions with tiny runnable code proofs (`DEBUG Q##`)
 
 ---
 
