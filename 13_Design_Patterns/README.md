@@ -1,7 +1,6 @@
 # 13_Design_Patterns
 
-The patterns that come up most in iOS interviews and real codebases — each with when to use it and when not to.
-(Delegation → `05_iOS_Fundamentals/04_Delegation`)
+The patterns that come up most in iOS interviews and real codebases — each with a runnable playground and plain-text notes.
 
 **Branch:** `feature/ios`
 
@@ -9,28 +8,41 @@ The patterns that come up most in iOS interviews and real codebases — each wit
 
 | # | Topic | Key Concepts | Status |
 |---|-------|--------------|:------:|
-| 01 | `01_Singleton` | `static let shared`, thread safety, why it hurts testing | ⬜ |
-| 02 | `02_Factory` | Hide object creation, return protocols | ⬜ |
-| 03 | `03_Observer` | NotificationCenter, KVO, Combine, `@Observable` | ⬜ |
-| 04 | `04_Adapter` | Wrap a third-party SDK behind your own protocol | ⬜ |
-| 05 | `05_Dependency_Injection` | Init / property injection, composition root, mocks | ⬜ |
-| 06 | `06_Repository` | One data access point, local + remote sources | ⬜ |
+| 01 | `01_Singleton` | `static let shared` + `private init`, Swift 6 safety, class vs struct, injectable singleton | ✅ |
+| 02 | `02_Factory` | Return protocols, environment factories, screen factory, mock factory | ✅ |
+| 03 | `03_Observer` | Weak observer list, NotificationCenter, KVO, Combine | ✅ |
+| 04 | `04_Adapter` | Wrap third-party SDKs, swap vendors, callback → async | ✅ |
+| 05 | `05_Dependency_Injection` | Init / default / property / method injection, composition root | ✅ |
+| 06 | `06_Repository` | Cache-first data access, offline fallback, mock repository | ✅ |
+| 07 | `07_Delegate` | Weak delegate, returning values, optional methods, leak demo | ✅ |
+| 08 | `08_NotificationCenter` | Typed payloads, selector vs block observers, Combine, async | ✅ |
+| 09 | `09_Coordinator` | Parent/child coordinators, finish + remove child, deep links | ✅ |
 
-**0 / 6 topics**
+**9 / 9 topics** ✅
 
-## File Format
+Each folder: `Pattern.swift` (runnable playground) + `Pattern_Notes.txt` (concept notes).
 
-- One `.swift` file per topic — concept → code → inline output
-- `print("\n========== NN - Title ==========")` per section
-- ✅ allowed / ❌ compile error
-- Interview Questions with one-line answers at the end
-- Interview-level concepts only
+## Which Pattern When?
+
+| Need | Pattern |
+|------|---------|
+| One shared instance | Singleton |
+| Hide which concrete type gets created | Factory |
+| Many objects react to one change | Observer / NotificationCenter |
+| One object reacts and can answer back | Delegate |
+| Fit a third-party / legacy API to your protocol | Adapter |
+| Pass dependencies in for testing | Dependency Injection |
+| One access point for API + cache + DB | Repository |
+| Navigation out of view controllers | Coordinator |
 
 ## Status
 
-- [ ] 01_Singleton
-- [ ] 02_Factory
-- [ ] 03_Observer
-- [ ] 04_Adapter
-- [ ] 05_Dependency_Injection
-- [ ] 06_Repository
+- [x] 01_Singleton
+- [x] 02_Factory
+- [x] 03_Observer
+- [x] 04_Adapter
+- [x] 05_Dependency_Injection
+- [x] 06_Repository
+- [x] 07_Delegate
+- [x] 08_NotificationCenter
+- [x] 09_Coordinator
