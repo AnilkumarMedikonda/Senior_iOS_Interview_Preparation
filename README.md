@@ -61,8 +61,9 @@ The preparation emphasizes the areas that require strong senior-level understand
 | 15 | Performance & Debugging |      3 |    3 |   ✅   |
 | 16 | Unit Testing            |      5 |    5 |   ✅   |
 | 17 | Interview Questions     |      8 |    8 |   ✅   |
+| 18 | Output Questions        |      8 |    8 |   ✅   |
 
-**129 / 129 topics** ✅ · 154 interview questions · ⬜ Not started · 🟡 In progress · ✅ Done
+**129 / 129 topics** ✅ · 154 interview questions · 95 output questions · ⬜ Not started · 🟡 In progress · ✅ Done
 
 ---
 
@@ -228,22 +229,31 @@ Senior_iOS_Interview_Preparation/
 │   ├── 04_Testing_Async_Code
 │   └── 05_Testable_Architecture
 │
-└── 17_Interview_Questions/
-    ├── 01_Swift_Questions
-    ├── 02_iOS_Questions
-    ├── 03_SwiftUI_Questions
-    ├── 04_Concurrency_Questions
-    ├── 05_Networking_Questions
-    ├── 06_Architecture_Questions
-    ├── 07_Performance_Questions
-    └── 08_Senior_Level_Questions
+├── 17_Interview_Questions/
+│   ├── 01_Swift_Questions
+│   ├── 02_iOS_Questions
+│   ├── 03_SwiftUI_Questions
+│   ├── 04_Concurrency_Questions
+│   ├── 05_Networking_Questions
+│   ├── 06_Architecture_Questions
+│   ├── 07_Performance_Questions
+│   └── 08_Senior_Level_Questions
+│
+└── 18_Output_Questions/
+    ├── 01_Closures.swift
+    ├── 02_Defer.swift
+    ├── 03_HOF.swift
+    ├── 04_Protocols.swift
+    ├── 05_Any_Some.swift
+    ├── 06_Extensions.swift
+    ├── 07_ARC.swift
+    └── 08_Concurrency.swift
 ```
 
 Each topic folder contains:
 
 * `<Topic>.swift` — runnable examples with inline output, interview-level notes, and an Interview Questions list with one-line answers
 * `<Topic>_Notes.txt` — plain-text concept notes for quick revision (Design Patterns, SOLID, Performance, Unit Testing, and selected Networking topics)
-* Coding Practice — predict-the-output drills for core topics (closures, ARC, concurrency)
 * XCTest playgrounds (`16_Unit_Testing`) run real tests with `defaultTestSuite.run()`
 
 Each `17_Interview_Questions` folder contains:
@@ -251,24 +261,29 @@ Each `17_Interview_Questions` folder contains:
 * `<Topic>_Questions.txt` — question → short spoken answer → usual follow-up
 * `<Topic>Questions.swift` — the same questions with tiny runnable code proofs (`DEBUG Q##`)
 
+`18_Output_Questions` contains:
+
+* One predict-the-output playground per topic — 95 questions across closures, defer, higher-order functions, protocols, Any/some, extensions, ARC, and concurrency
+* Each question prints a `Q##` header and ends with a `// ▶️ Run` block — comment it out, predict, then run
+
 ---
 
 ## 🏗️ Companion Repository
 
-System design is maintained separately as a dedicated repository containing architecture notes, design decisions, diagrams, and real-world mobile system-design problems.
+System design is maintained separately as a dedicated repository containing architecture notes, design decisions, diagrams, SwiftUI demo apps, and real-world mobile system-design problems.
 
-**[iOS_System_Design](https://github.com/AnilkumarMedikonda/iOS_System_Design)**
+**[Senior_iOS_System_Design](https://github.com/AnilkumarMedikonda/Senior_iOS_System_Design)**
 
 Key topics include:
 
+* Networking Layer
 * Image Loading & Caching
-* Offline-First Architecture
-* Pagination
+* Offline-First & Sync
+* Pagination & Search
 * Deep Linking
 * Authentication
-* Push Notifications
-* Networking Architecture
-* Data Synchronization
+* E-Commerce App
+* Chat App
 
 ---
 
