@@ -13,8 +13,11 @@ How to structure an iOS app so it stays testable and easy to change — who owns
 | 03 | `03_Coordinator` | MVVM-C, ViewModel events, Coordinator owns screens + navigation | ✅ |
 | 04 | `04_VIPER` | View, Interactor, Presenter, Entity, Router, Module Builder wiring | ✅ |
 | 05 | `05_Clean_Architecture` | Presentation / Domain / Data, UseCase rules, DTO → Entity, dependency rule | ✅ |
+| 06 | `06_MVVM_Clean` | ViewModel → UseCase → Repository, UI state enum, DTO → Entity → UI Model, per-layer mocks | ✅ |
+| 07 | `07_Modular_Architecture` | Core / Interface / Feature modules, SPM, no feature → feature imports, composition root | ✅ |
+| 08 | `08_TCA_Modern_SwiftUI` | @Observable MVVM, TCA State / Action / Reducer / Effect / Store, pure reducer tests | ✅ |
 
-**5 / 5 topics** ✅
+**8 / 8 topics** ✅
 
 ## Extras
 
@@ -27,14 +30,23 @@ How to structure an iOS app so it stays testable and easy to change — who owns
 
 ## Quick Comparison
 
-| | MVC | MVVM | MVVM-C | VIPER | Clean |
-|---|:-:|:-:|:-:|:-:|:-:|
-| Complexity | Low | Medium | Medium | High | High |
-| Testability | Low | Good | Good | Very good | Very good |
-| Navigation | VC | VC | Coordinator | Router | Coordinator |
-| Best for | Small screens | Most apps | Multi-screen apps | Huge teams | Large, long-lived apps |
+| | MVC | MVVM | MVVM-C | VIPER | Clean | MVVM + Clean | TCA |
+|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| Complexity | Low | Medium | Medium | High | High | Medium–High | High |
+| Testability | Low | Good | Good | Very good | Very good | Very good | Very good |
+| Navigation | VC | VC | Coordinator | Router | Coordinator | Coordinator | Reducer / Store |
+| Best for | Small screens | Most apps | Multi-screen apps | Huge teams | Large, long-lived apps | Large apps with real business rules | Complex SwiftUI state |
 
-> Senior default: **MVVM-C**, adding **Clean** layers (UseCases, Repositories) when business logic is complex.
+**Modular Architecture** is not an alternative to these. It physically splits the app into Swift Packages, and each feature module uses one of the above inside.
+
+| App size | Choice |
+|---|---|
+| Small | MVC / simple MVVM |
+| Medium | MVVM-C |
+| Large | MVVM + Clean + Coordinator |
+| Huge / many teams | + Modular |
+
+> Senior default: **MVVM-C**, adding **Clean** layers (UseCases, Repositories) when business logic is complex, and **modules** when the team grows.
 
 ## Architecture vs Pattern vs Principle
 
@@ -57,3 +69,6 @@ How to structure an iOS app so it stays testable and easy to change — who owns
 - [x] 03_Coordinator
 - [x] 04_VIPER
 - [x] 05_Clean_Architecture
+- [x] 06_MVVM_Clean
+- [x] 07_Modular_Architecture
+- [x] 08_TCA_Modern_SwiftUI
