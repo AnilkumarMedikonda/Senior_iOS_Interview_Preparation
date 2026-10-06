@@ -35,7 +35,7 @@ The preparation emphasizes the areas that require strong senior-level understand
 3. **Networking** — URLSession, error handling, authentication, token refresh, cancellation
 4. **Swift & Advanced Swift** — protocols, generics, closures, property wrappers, dispatch
 5. **UIKit & SwiftUI** — lifecycle, state management, navigation, performance, interoperability
-6. **Architecture & Patterns** — MVVM, Coordinator, VIPER, Clean Architecture, DI, Repository
+6. **Architecture & Patterns** — MVVM, Coordinator, VIPER, Clean Architecture, Modular, TCA, DI, Repository
 7. **Performance & Debugging** — Instruments, memory, scrolling, main-thread performance, crashes
 
 ---
@@ -192,12 +192,15 @@ Senior_iOS_Interview_Preparation/
 │   ├── 05_Disk_Cache
 │   └── 06_Offline_Storage
 │
-├── 12_Architecture/
+├── ├── 12_Architecture/
 │   ├── 01_MVC
 │   ├── 02_MVVM
 │   ├── 03_Coordinator
 │   ├── 04_VIPER
-│   └── 05_Clean_Architecture
+│   ├── 05_Clean_Architecture
+│   ├── 06_MVVM_Clean
+│   ├── 07_Modular_Architecture
+│   └── 08_TCA_Modern_SwiftUI
 │
 ├── 13_Design_Patterns/
 │   ├── 01_Singleton
