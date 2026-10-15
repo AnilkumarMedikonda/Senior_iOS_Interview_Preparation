@@ -1,5 +1,8 @@
 import Foundation
 
+
+// NOTE: ---->>  This file suppose to contain NotificationCenter details instead of coordinator.
+
 // ============================================================
 // MARK: - COORDINATOR PATTERN
 // ============================================================
